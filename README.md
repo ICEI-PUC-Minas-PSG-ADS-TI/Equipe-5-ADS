@@ -1,23 +1,23 @@
-# TÍTULO DO PROJETO
+# EcoLife - Aplicação de Aluguel de Bicicletas
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Desenvolvimento de Aplicação Interativa`
 
-`SEMESTRE`
+`3° semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O EcoLife é uma plataforma de conscientização ambiental voltada para a mobilidade sustentável, incentivando o uso de bicicletas como meio de transporte para reduzir poluição, emissões de gases e congestionamento urbano, além de melhorar a saúde dos usuários. 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Edrei Dornelas Machado
+* Giordano Norberto Souza
+* Maria Caroline Alves
+* Charles Aganeti
 
 ## Orientador
 
-* Nome completo do professor 1
+* Ramon Lacerda Marques
 
 ## Instruções de utilização
 
