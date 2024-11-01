@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliação de Experiência - EcoLife</title>
+    <link rel="stylesheet" href="experienciaCliente.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="left-btn">Voltar</a></li>
+                <li><a href="#" class="right-btn">Logout</a></li>
+            </ul>
+        </nav>
+        <h1>EcoLife</h1>
+    </header>
+
+    <main class="container">
+        <section class="evaluation-section">
+            <h2>Avalie Sua Experiência</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="rating">Avaliação (de 1 a 5 estrelas)</label>
+                    <div class="star-rating">
+                        <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 estrelas">&#9733;</label>
+                        <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 estrelas">&#9733;</label>
+                        <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 estrelas">&#9733;</label>
+                        <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 estrelas">&#9733;</label>
+                        <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 estrela">&#9733;</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback">Feedback</label>
+                    <textarea id="feedback" name="feedback" rows="4" placeholder="Deixe seu comentário aqui..." aria-label="Deixe seu comentário"></textarea>
+                </div>
+
+                <button type="submit" class="btn" aria-label="Enviar avaliação">Enviar Avaliação</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>EcoLife © 2024 - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        
+        const stars = document.querySelectorAll('.star-rating label');
+        stars.forEach((star, idx) => {
+            star.addEventListener('click', () => {
+                for (let i = 0; i <= idx; i++) {
+                    stars[i].style.color = 'gold';
+                }
+                for (let i = idx + 1; i < stars.length; i++) {
+                    stars[i].style.color = '#ccc';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

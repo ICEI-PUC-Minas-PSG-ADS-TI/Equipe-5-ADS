@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Bicicleta - EcoLife</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="#" class="left-btn">Voltar</a></li>
+                <li><a href="#" class="right-btn">Logout</a></li>
+            </ul>
+        </nav>
+        <h1>Reserva de Bicicleta - EcoLife</h1>
+    </header>
+
+    <main class="container">
+        <section class="reservation-section">
+            <h2>Reserve sua Bicicleta</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="station">Estação de Retirada</label>
+                    <select id="station" name="station" aria-label="Selecione a estação de retirada">
+                        <option value="estacao1">Estação 1 - Centro</option>
+                        <option value="estacao2">Estação 2 - Savassi</option>
+                        <option value="estacao3">Estação 3 - Pampulha</option>
+                        <option value="estacao4">Estação 4 - Venda Nova</option>
+                        <option value="estacao5">Estação 5 - Barreiro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="start-date">Data e Hora de Retirada</label>
+                    <div class="date-time">
+                        <input type="date" id="start-date" name="start-date" aria-label="Selecione a data de retirada">
+                        <input type="time" id="start-time" name="start-time" aria-label="Selecione a hora de retirada">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="end-date">Data e Hora de Devolução</label>
+                    <div class="date-time">
+                        <input type="date" id="end-date" name="end-date" aria-label="Selecione a data de devolução">
+                        <input type="time" id="end-time" name="end-time" aria-label="Selecione a hora de devolução">
+                    </div>
+                </div>
+
+                <button type="submit" class="btn" aria-label="Reservar bicicleta">Reservar</button>
+            </form>
+
+            <div class="bike-details">
+                <img src="Design sem nome (1).png" alt="Imagem de Mountain Bike" class="bike-img" aria-label="Imagem de uma bicicleta">
+                
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>EcoLife © 2024 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
+
