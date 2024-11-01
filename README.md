@@ -44,6 +44,23 @@ Assim que a primeira versão do sistema estiver disponível, deverá complementa
 
 <li><a href="presentation/README.md"> Apresentação da solução</a></li>
 
+#Planejamento e Definição de Prioridades
+Classificação dos Requisitos:
+Requisitos Funcionais
+Prioritários:
+*Cadastro de Usuário
+*Login de Usuário
+*Consulta de Bicicletas Disponíveis
+*Reserva de Bicicletas
+*Avaliação da Experiência Mapa de Estações
+Desejáveis:
+*Visualização de Rotas
+*Atualização de Status das Bicicletas
+*Carrossel de lugares para pedalar
+Opcionais:
+*Notificações de disponibilidade de bicicletas
+*Integração com redes sociais para login
+*Sobre nós
 
 ## Histórico de versões
 
