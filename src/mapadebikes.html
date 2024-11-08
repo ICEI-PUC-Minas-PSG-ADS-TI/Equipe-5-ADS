@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa de Estações de Bicicletas</title>
+
+    <!-- estilo do Leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Eco Life</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Serviços</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="map-container">
+        <div class="header">Mapa de Estações de Bicicletas</div>
+        <div id="map"></div>
+    </div>
+
+    <!-- script do Leaflet.js para integrar o mapa -->
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script>
+        // inicializar o mapa com uma localizacao no meio
+        const map = L.map('map').setView([-19.852457, -43.977664], 13);
+
+        // adiciona o tile layer do OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // marcadores
+        const stations = [
+            { name: 'Estação 1', coords: [-19.843496, -43.969553] },
+            { name: 'Estação 2', coords: [-19.854821, -44.004056] },
+            { name: 'Estação 3', coords: [-19.868876, -43.976058] }
+        ];
+
+        // loop para adicionar cada estação ao mapa
+        stations.forEach(station => {
+            L.marker(station.coords)
+                .addTo(map)
+                .bindPopup(`<b>${station.name}</b><br>Bikes disponíveis.`);
+        });
+    </script>
+
+</body>
+</html>
