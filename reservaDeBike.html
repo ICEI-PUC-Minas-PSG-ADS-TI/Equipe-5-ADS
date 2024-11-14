@@ -21,47 +21,167 @@
         <section class="reservation-section">
             <h2>Reserve sua Bicicleta</h2>
 
-            <form action="#" method="post">
+            <form id="reservation-form">
                 <div class="form-group">
                     <label for="station">Estação de Retirada</label>
-                    <select id="station" name="station" aria-label="Selecione a estação de retirada">
-                        <option value="estacao1">Estação 1 - Centro</option>
-                        <option value="estacao2">Estação 2 - Savassi</option>
-                        <option value="estacao3">Estação 3 - Pampulha</option>
-                        <option value="estacao4">Estação 4 - Venda Nova</option>
-                        <option value="estacao5">Estação 5 - Barreiro</option>
+                    <select id="station" name="station" aria-label="Selecione a estação de retirada" required>
+                        <option value="">Selecione uma estação</option>
+                        <option value="Centro">Estação 1 - Centro</option>
+                        <option value="Savassi">Estação 2 - Savassi</option>
+                        <option value="Pampulha">Estação 3 - Pampulha</option>
+                        <option value="Venda Nova">Estação 4 - Venda Nova</option>
+                        <option value="Barreiro">Estação 5 - Barreiro</option>
                     </select>
                 </div>
 
                 <div class="form-group">
                     <label for="start-date">Data e Hora de Retirada</label>
                     <div class="date-time">
-                        <input type="date" id="start-date" name="start-date" aria-label="Selecione a data de retirada">
-                        <input type="time" id="start-time" name="start-time" aria-label="Selecione a hora de retirada">
+                        <input type="date" id="start-date" name="start-date" required>
+                        <select id="start-time" name="start-time" required>
+                            <option value="00:00">00:00</option>
+                            <option value="00:30">00:30</option>
+                            <option value="01:00">01:00</option>
+                            <option value="01:30">01:30</option>
+                            <option value="02:00">02:00</option>
+                            <option value="02:30">02:30</option>
+                            <option value="03:00">03:00</option>
+                            <option value="03:30">03:30</option>
+                            <option value="04:00">04:00</option>
+                            <option value="04:30">04:30</option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
                     </div>
                 </div>
-
+                
                 <div class="form-group">
                     <label for="end-date">Data e Hora de Devolução</label>
                     <div class="date-time">
-                        <input type="date" id="end-date" name="end-date" aria-label="Selecione a data de devolução">
-                        <input type="time" id="end-time" name="end-time" aria-label="Selecione a hora de devolução">
+                        <input type="date" id="end-date" name="end-date" required>
+                        <select id="end-time" name="end-time" required>
+                            <option value="00:00">00:00</option>
+                            <option value="00:30">00:30</option>
+                            <option value="01:00">01:00</option>
+                            <option value="01:30">01:30</option>
+                            <option value="02:00">02:00</option>
+                            <option value="02:30">02:30</option>
+                            <option value="03:00">03:00</option>
+                            <option value="03:30">03:30</option>
+                            <option value="04:00">04:00</option>
+                            <option value="04:30">04:30</option>
+                            <option value="05:00">05:00</option>
+                            <option value="05:30">05:30</option>
+                            <option value="06:00">06:00</option>
+                            <option value="06:30">06:30</option>
+                            <option value="07:00">07:00</option>
+                            <option value="07:30">07:30</option>
+                            <option value="08:00">08:00</option>
+                            <option value="08:30">08:30</option>
+                            <option value="09:00">09:00</option>
+                            <option value="09:30">09:30</option>
+                            <option value="10:00">10:00</option>
+                            <option value="10:30">10:30</option>
+                            <option value="11:00">11:00</option>
+                            <option value="11:30">11:30</option>
+                            <option value="12:00">12:00</option>
+                            <option value="12:30">12:30</option>
+                            <option value="13:00">13:00</option>
+                            <option value="13:30">13:30</option>
+                            <option value="14:00">14:00</option>
+                            <option value="14:30">14:30</option>
+                            <option value="15:00">15:00</option>
+                            <option value="15:30">15:30</option>
+                            <option value="16:00">16:00</option>
+                            <option value="16:30">16:30</option>
+                            <option value="17:00">17:00</option>
+                            <option value="17:30">17:30</option>
+                            <option value="18:00">18:00</option>
+                            <option value="18:30">18:30</option>
+                            <option value="19:00">19:00</option>
+                            <option value="19:30">19:30</option>
+                            <option value="20:00">20:00</option>
+                            <option value="20:30">20:30</option>
+                            <option value="21:00">21:00</option>
+                            <option value="21:30">21:30</option>
+                            <option value="22:00">22:00</option>
+                            <option value="22:30">22:30</option>
+                            <option value="23:00">23:00</option>
+                            <option value="23:30">23:30</option>
+                        </select>
                     </div>
                 </div>
+                
 
-                <button type="submit" class="btn" aria-label="Reservar bicicleta">Reservar</button>
+                <button type="button" class="btn" onclick="showReservationSummary()">Reservar</button>
             </form>
 
             <div class="bike-details">
-                <img src="Design sem nome (1).png" alt="Imagem de Mountain Bike" class="bike-img" aria-label="Imagem de uma bicicleta">
-                
+                <img src="Design sem nome (1).png" alt="Imagem de Mountain Bike" class="bike-img">
             </div>
         </section>
     </main>
 
+    <!-- Modal de Confirmação -->
+    <div id="confirmation-modal" class="modal">
+        <div class="modal-content">
+            <h3>Confirme Sua Reserva</h3>
+            <p id="reservation-summary"></p>
+            <button class="confirm-btn" onclick="confirmReservation()">Confirmar</button>
+            <button class="close-btn" onclick="closeConfirmationModal()">Cancelar</button>
+        </div>
+    </div>
+
+    <!-- Modal de Reserva Efetuada -->
+    <div id="reservation-success-modal" class="modal">
+        <div class="modal-content">
+            <h3>Reserva Efetuada com Sucesso!</h3>
+            <p>Sua bicicleta foi reservada. Boa viagem!</p>
+            <button class="close-btn" onclick="closeSuccessModal()">Fechar</button>
+        </div>
+    </div>
+
     <footer>
         <p>EcoLife © 2024 - Todos os direitos reservados</p>
     </footer>
+
+    <!-- Inclusão JavaScript -->
+    <script src="script.js"></script>
 </body>
 </html>
-
