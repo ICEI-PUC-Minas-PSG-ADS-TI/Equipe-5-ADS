@@ -1,18 +1,11 @@
-/* Reset básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body.bg-image {
+    background-image: url('Imagens/EcoLife-fundo.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-body, html {
-    width: 100%;
-    height: 100%;
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-}
-
-/* Estilo do cabeçalho */
 header {
     width: 100%;
     padding: 10px;
@@ -23,6 +16,10 @@ header {
 
 header h1 {
     margin: 0;
+}
+
+li {
+   cursor: pointer;
 }
 
 /* Navegação */
@@ -45,7 +42,6 @@ nav a {
     max-width: 1200px;
     height: 80vh;
     margin: 20px auto;
-    background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
     position: relative;
@@ -70,3 +66,63 @@ nav a {
     font-size: 18px;
     z-index: 1000;
 }
+
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  
+  .dropdown-item {
+    display: block;
+    font-size: 14px;
+    padding: 8px 15px;
+    width: 70%;
+    text-decoration: none;
+    color: #333;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  .btn i {
+    margin-right: 8px;
+  }
+  
+  #logoutMenu a:hover {
+    background-color: #f5f5f5;
+  }
+
+.logo-img {
+    max-width: 80px;
+    height: auto;
+  }
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-bottom: 10px;
+  }

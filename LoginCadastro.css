@@ -1,25 +1,78 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
-}
-
 body {
+  font-family: "Arial", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f3f4f6;
+}
+
+body.bg-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('Imagens/EcoLife-fundo.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.logo img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Container central */
+.login-container {
+  max-width: 400px;
+  background: linear-gradient(180deg, rgb(175, 255, 171) 50%, rgb(36, 123, 46) 100%); 
+  margin: 5px;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Botões */
+.btn {
+  background-color: #dc3545;
+  color: #fff;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #c82333;
+}
+
+/* Input do formulário */
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Ajuste de espaçamento entre elementos */
+.mt-3 {
+  margin-top: 20px;
 }
 
 .container {
-  width: 100%;
-  max-width: 400px;
+  width: 100px;
   padding: 2rem;
-  background-color: #ffffff;
+  background: linear-gradient(180deg, rgb(175, 255, 171) 50%, rgb(36, 123, 46) 100%);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tab-container {
@@ -59,19 +112,21 @@ h2 {
 
 label {
   font-size: 0.9rem;
-  color: #666666;
+  color: #000000;
   margin-bottom: 0.5rem;
 }
 
 input[type="email"],
 input[type="password"],
 input[type="text"] {
-  padding: 0.8rem;
-  border: 1px solid #dddddd;
-  border-radius: 4px;
-  margin-bottom: 1rem;
-  font-size: 1rem;
   width: 100%;
+  padding: 10px 10px;
+  margin: 8px 0;
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background-color: #025616;
 }
 
 button[type="submit"] {

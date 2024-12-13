@@ -1,0 +1,91 @@
+.header {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #90ee90;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  z-index: 1000;
+}
+.logo img {
+  max-width: 80px;
+  height: auto;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+header {
+  width: 100%;
+  padding: 10px;
+  background-color: #90ee90;
+  color: #fff;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #d4f1d1; /* Fundo verde clarinho */
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra ao modal */
+}
+
+.modal-content h2 {
+  margin-bottom: 20px;
+}
+
+.modal-content label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-content button {
+  padding: 10px 15px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #4caf50; /* Verde escuro para os botões */
+  color: white;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.modal-content button:hover {
+  background-color: #45a049; /* Efeito de hover */
+}
